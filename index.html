@@ -50,8 +50,8 @@
 
 <body>
     <header>
-        <!-- Navbar -->
-        <nav class="bg-[#FFF9F4] sora-font ">
+        <!-- Navbar for Pc -->
+        <nav class="bg-[#FFF9F4] sora-font hidden md:block ">
             <div class="navbar lg:px-20">
                 <div class="navbar-start">
                     <div class="dropdown">
@@ -91,6 +91,16 @@
                 
             </div>
         </nav>
+
+        <!-- Navbar for phone -->
+         <nav class="bg-[#FFF9F4] sora-font flex justify-between items-center p-2 md:hidden">
+          <div>
+            <img src="./c1-assets/logo-header.png" alt="">
+          </div>
+          <div>
+            <i class="fa-solid fa-bars"></i>
+          </div>
+         </nav>
     </header>
 
     <main class="md:container mx-auto">
@@ -113,9 +123,9 @@
         </section>
 
         <!-- Categories Section -->
-         <section class="sora-font p-10 ">
+         <section class="sora-font lg:p-10 ">
             <div>
-                <h2 class="adlam-font   font-bold text-4xl">
+                <h2 class="adlam-font text-center lg:text-start  font-bold text-2xl lg:text-4xl">
                     Browse By Categories
                 </h2>
             </div>
@@ -231,7 +241,7 @@
     <section class="bg-[#FFF9F4] mb-10" >
         <div class="md:container mx-auto">
            <div>
-            <h2 class="adlam-font pt-20 pb-3 p-10  font-bold text-4xl">
+            <h2 class="adlam-font pt-20 pb-3 p-10  text-center lg:text-start font-bold text-2xl lg:text-4xl">
                 Trending Pet Products
             </h2>
             </div>
@@ -251,7 +261,7 @@
                 </div>
 
                 <!-- treding-card section -->
-                <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 ">
+                <div class="grid grid-cols-2 lg:grid-cols-3 gap-2  ">
 
                     <!-- card-1 -->
                     <div class="bg-white grid grid-cols-2 rounded-lg border border-gray-300">
@@ -372,7 +382,7 @@
      <!-- Low price card section -->
      <section class="md:container mx-auto">
         <div>
-            <h2 class="adlam-font pt-32 pb-3 p-10  font-bold text-4xl">
+            <h2 class="adlam-font pt-32 pb-3 p-10 text-center lg:text-start font-bold text-2xl lg:text-4xl ">
                 Everyday low Price
             </h2>
         </div>
@@ -382,7 +392,7 @@
                 <!-- text -->
                 <div class=" text-start p-10 space-y-1 ">
                     <p  class="text-sm pt-20">Under Price</p>
-                    <h2 class="text-[20px] font-semibold adlam-font">Pet Grooming Mitt</h2>
+                    <h2 class="text-sm lg:text-[20px] lg:font-semibold adlam-font">Pet Grooming Mitt</h2>
                     <p  class="text-sm text-white">(Easy Hair Removal)</p>
                     <p  class="text-5xl font-bold adlam-font">$7.99</p>
 
@@ -408,17 +418,18 @@
      </section>
 
      <!-- News section -->
-      <section class="md:container mx-auto bg-[#FFF9F4] p-10 rounded-lg mb-10">
-        <div class="grid grid-cols-2 w-[]">
+      
+      <section class="md:container mx-auto   ">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 bg-[#FFF9F4]  rounded-lg ">
             <div>
                 <img src="./c1-assets/cute-pet-mid.png" alt="">
             </div>
 
             <div class="space-y-3 justify-center items-center  p-20">
-                <h2 class="adlam-font text-4xl">Get Pawsome News!</h2>
-                <p class="sora-font">Exclusive training tips, ticks, product deals and more.</p>
+                <h2 class="adlam-font text-xl text-center lg:text-4xl">Get Pawsome News!</h2>
+                <p class="sora-font text-center">Exclusive training tips, ticks, product deals and more.</p>
                 <input class="  w-[420px] h-[60px] rounded-xl pl-5" type="email" placeholder="Enter Your Mail"> <br>
-                <button><a class="btn bg-btn-primary">Subscribe</a></button> 
+                <button><a class="btn bg-btn-primary w-32  ">Subscribe</a></button> 
             </div>
 
         </div>
@@ -428,23 +439,23 @@
 
  
      <!-- footer section -->
-     <footer class="footer bg-[#FFDC2680] text-base-content p-20  grid grid-cols-3">
+     <footer class="footer bg-[#FFDC2680]  text-base-content p-20  grid grid-cols-1 lg:grid-cols-3">
         <div>
-           <div class="pt-60 grid grid-cols-2  ">
+           <div class="grid grid-cols-2  ">
             <img src="./c1-assets/logo-footer.png" alt="">
             <h2 class="font-bold text-xl adlam-font">Browse Pets</h2>
            </div>
            <p>Discover a world of treats, toys and <br> essentials handpicked for your furry friends.</p>
 
         </div>
-        <div class="pt-60 space-y-2 font-semibold text-xm">
+        <div class=" space-y-2 font-semibold text-xm">
             <h3>Find a Pet</h3>
             <h3>Breeds</h3>
             <h3>Contact Us</h3>
 
         </div>
         <div>
-            <nav class="pt-60">
+            <nav class="">
                 <h6 class="font-bold text-xl">Follow Us</h6>
                 <div class="grid grid-flow-col gap-4">
                   <a>
